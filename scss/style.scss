@@ -1,0 +1,307 @@
+@import "normalize";
+@import "layout";
+
+
+
+body{
+	font: 400 16px/1.2 "Josefin Sans", sans-serif;
+	// background: #fff;
+	// border: 15px solid #fff;
+	color: #fff;
+
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+@font-face {
+	font-family: 'Aleo';
+	src: url('../fonts/aleo-regular-webfont.woff2') format('woff2'),
+	url('../fonts/aleo-regular-webfont.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+
+$primary-color: #fff;
+$text-color: #e8e8e8;
+$secondary-color: #5474fd;
+
+
+
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1070px;
+}
+
+
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	background: $secondary-color;
+	text-decoration: none;
+	color: currentColor;
+
+	font-family: Aleo;
+	font-size: 16px;
+	font-weight: 400;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-intro {
+	background: url(../img/bg-top.jpg) 50%;
+	background-size: cover;
+	padding: 275px 230px;
+	position: relative;
+
+
+	&__content {
+		text-align: center;
+	}
+
+	&__title {
+		margin: 0;
+		font-size: 48px;
+		font-weight: 700;
+		letter-spacing: 0.06em;
+		text-transform: uppercase;
+
+	}
+
+	&__subtitle {
+		margin: 0;
+		font-size: 22px;
+		font-weight: 400;
+		letter-spacing: 0.24em;
+	}
+
+
+	&__form{
+		padding-top: 44px;
+
+		.ba-text-row {
+			display: inline-block;
+			padding: 0 125px;
+			background-color: #fff;
+			width: 495px;
+			height: 61px;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1.8;
+
+			border: 2px solid #fff;
+			color:  #999;
+		}
+
+		.ba-form-button {
+			font: 400 14px/1.857 'Aleo';
+			display: inline-block;
+			background-color: #5474fd;
+			border: 2px solid #fff;
+			padding: 16px 20px 16px 46px;
+			margin-left: -5px;
+			vertical-align: middle;
+
+			&__icon {
+				vertical-align: middle;
+			}
+		}
+	}
+
+	.ba-scroll {
+		position: absolute;
+		bottom: 100px;
+		left: 46.5%;
+		color: $primary-color;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: 400;
+		letter-spacing: 0.2em;
+
+
+		div {
+			text-align: center;
+			margin-top: 10px;
+		}
+	}
+}
+
+.ba-header {
+	background: $secondary-color;
+	padding: 30px 0 23px;
+
+}
+
+.ba-logo {
+	display: inline-block;
+}
+
+.ba-nav {
+	float: right;
+
+}
+
+.ba-nav-list {
+	list-style: none;
+	margin: 0;
+
+	&__item {
+		display: inline-block;
+		margin-left: 40px;
+
+		a {
+			text-decoration: none;
+			color: $primary-color;
+			font-family: Aleo;
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+	}
+}
+
+
+.ba-who-we-r {
+	background: url(../img/bg-who-we-r.jpg) 50%;
+	background-size: cover;
+	padding: 115px 0 115px;
+
+	&__text {
+		color:  $text-color;
+		font-size: 16px;
+		font-weight: 400;
+
+		p {
+			margin: 0;
+			line-height: 1.5;
+
+		}
+
+		p + p {
+			padding-top: 30px;
+		}
+	}
+
+	&__title {
+		font-family: Aleo;
+		font-size: 36px;
+		font-weight: 400;
+		line-height: 1;
+		margin: 80px 0 60px;
+	}
+
+
+
+	&__button {
+		margin-top: 48px;
+		padding: 20px 45px;
+
+	}
+
+	&__image {
+		margin-left: 110px;
+	}
+}
+
+.ba-row + .ba-row {
+	margin-left: 105px;
+
+}
+
+.ba-what-we-do {
+	background: #333;
+	padding: 90px 0 110px;
+	text-align: center;
+
+	&__icon {
+
+		p {
+			font-family: Aleo;
+			color:  #e8e8e8;
+			font-size: 36px;
+			font-weight: 400;
+			line-height: 1;
+		}
+
+		svg {
+			background: #333336;
+			// border-radius: 50%;
+		}
+	}
+}
+
+.ba-travel {
+	margin: 0;
+	// background: url(../img/bg-travel-1.jpg);
+
+	&__country {
+		margin: 0;
+	}
+
+	&__content {
+		max-width: 540px;
+		background: rgba(53, 50, 45, 0.5);
+	}
+}
+
+.ba-travel__top-bg {
+	background: url(../img/bg-travel-1.jpg) 50%,;
+	background-size: cover;
+	margin: 0;
+}
+
+.ba-travel__top {
+
+	padding: 230px 570px 100px 0;
+
+}
+
+
+
+
